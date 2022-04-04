@@ -9,6 +9,11 @@ const routes: Array<RouteConfig> = [
     name: "home",
     component: () => import("@/views/SearchView.vue"),
   },
+  {
+    path: "/isLoading",
+    name: "loading",
+    component: () => import("@/views/SearchView2.vue")
+  }
 ];
 
 const router = new VueRouter({
